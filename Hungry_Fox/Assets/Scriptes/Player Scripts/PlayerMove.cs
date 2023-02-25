@@ -10,13 +10,14 @@ public class PlayerMove : MonoBehaviour
     private float moveInput;
     public float jumpForce;
 
-    //Присидання
+    //Повзання
     public LayerMask roof;
     public Collider2D poseStand;
     public Collider2D poseSquad;
     public Transform topCheck;
     public float topCheckRadius;
     public float speedStatic;
+    private bool crounchAbility = true;
 
     //Відзеркалення
     private bool facingRight = true;
@@ -27,6 +28,13 @@ public class PlayerMove : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
     private bool jumpAbility = true;
+
+    //Драбини
+    public Transform ladderCheck;
+    private bool isLadder;
+    public float ladderCheckRadius;
+    public LayerMask ladder;
+    public float climbingSpeed;
 
     private void Start()
     {
@@ -39,6 +47,8 @@ public class PlayerMove : MonoBehaviour
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
+        isLadder = Physics2D.OverlapCircle(ladderCheck.position, ladderCheckRadius, ladder);
+
         if (!facingRight && moveInput > 0)
         {
             Flip();
@@ -47,7 +57,9 @@ public class PlayerMove : MonoBehaviour
         {
             Flip();
         }
-        if (Input.GetKey(KeyCode.S))
+
+        //Повзання
+        if (Input.GetKey(KeyCode.S) && crounchAbility == true)
         {
             poseStand.enabled = false;
             poseSquad.enabled = true;
@@ -63,10 +75,12 @@ public class PlayerMove : MonoBehaviour
     }
     private void Update()
     {
+        //Прижок
         if (isGround == true && Input.GetKey(KeyCode.Space) && jumpAbility)
         {
             rb.velocity = Vector2.up * jumpForce;
         }
+        //Швидкість повзання
         if (Input.GetKeyDown(KeyCode.S))
         {
             speed = speed * 0.75f;
@@ -75,6 +89,33 @@ public class PlayerMove : MonoBehaviour
         {
             speed = speedStatic;
         }
+        //Лазання по драбині
+        if (isLadder == true)
+        {
+            rb.gravityScale = 0;
+            jumpAbility = false;
+            crounchAbility = false;
+            rb.velocity = Vector2.up * 0;
+        }
+        else if (isLadder == false)
+        {
+            rb.gravityScale = 3;
+            jumpAbility = true;
+            crounchAbility = true;
+        }
+        //Підйом вверх
+        if (isLadder == true && Input.GetKey(KeyCode.W))
+        {
+            rb.velocity = Vector2.up * climbingSpeed;
+        }
+        
+        //Спуск до низу
+        if(isLadder == true && Input.GetKey(KeyCode.S))
+        {
+            rb.velocity = Vector2.up * -climbingSpeed;
+        }
+        
+
     }
     //Розворот персонажа
     public void Flip()

@@ -6,11 +6,14 @@ public class PlayerAnimation : MonoBehaviour
 {
     public Transform topCheck;
     [SerializeField] private Transform groundCheck;
+    [SerializeField] private Transform ladderCheck;
     public float topCheckRadius;
     public float groundCheckRadius;
-    private Animator anim;
+    public float ladderCheckRadius;
     public LayerMask roof;
     public LayerMask ground;
+    public LayerMask ladder;
+    private Animator anim;
     private Rigidbody2D rb;
     public void Start()
     {
@@ -19,7 +22,7 @@ public class PlayerAnimation : MonoBehaviour
     }
     public void Update()
     {
-
+        //Біг
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             anim.SetBool("StartRun", true);
@@ -28,7 +31,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.SetBool("StartRun", false);
         }
-
+        //Повзання
         if (Input.GetKey(KeyCode.S))
         {
             anim.SetBool("StartRun", false);
@@ -38,7 +41,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.SetBool("Crouch", false);
         }
-
+        //Стрибок і падіння
         if (Input.GetKey(KeyCode.Space) && !Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, ground))
         {
             anim.SetBool("StartRun", false);
@@ -55,6 +58,36 @@ public class PlayerAnimation : MonoBehaviour
         else if (Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, ground))
         {
             anim.SetBool("Falling", false);
+        }
+        //Лазання по драбині
+        if(Physics2D.OverlapCircle(ladderCheck.position, ladderCheckRadius, ladder))
+        {
+            anim.SetBool("StartRun", false);
+            anim.SetBool("Jumping", false);
+            anim.SetBool("Falling", false);
+            anim.SetBool("Crouch", false);
+            anim.SetBool("LadderHold", true);
+        }
+        else if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+            && Physics2D.OverlapCircle(ladderCheck.position, ladderCheckRadius, ladder))
+        {
+            anim.SetBool("StartRun", false);
+            anim.SetBool("Jumping", false);
+            anim.SetBool("Falling", false);
+            anim.SetBool("Crouch", false);
+            anim.SetBool("LadderHold", false);
+            anim.SetBool("LadderClimbing", true);
+        }
+        if ((Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W))
+            && Physics2D.OverlapCircle(ladderCheck.position, ladderCheckRadius, ladder))
+        {
+            anim.SetBool("LadderHold", true);
+            anim.SetBool("LadderClimbing", false);
+        }
+        if (!Physics2D.OverlapCircle(ladderCheck.position, ladderCheckRadius, ladder))
+        {
+            anim.SetBool("LadderHold", false);
+            anim.SetBool("LadderClimbing", false);
         }
     }
 }
