@@ -50,7 +50,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.SetBool("StartRun", false);
             anim.SetBool("Falling", true);
-            anim.SetBool("Jumping", false);           
+            anim.SetBool("Jumping", false);
         }
         else if (Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, ground))
         {
