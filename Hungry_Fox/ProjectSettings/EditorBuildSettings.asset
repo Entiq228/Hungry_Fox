@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hungry_Fox2.unity
     guid: b9b42aa86f593e94585f92a067ce3402
+  - enabled: 1
+    path: Assets/Scenes/Hungry_Fox3.unity
+    guid: 5ea1564b90f78b34e84616e3023a26f3
   m_configObjects: {}
