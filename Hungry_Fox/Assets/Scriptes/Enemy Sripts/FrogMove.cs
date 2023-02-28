@@ -19,6 +19,7 @@ public class FrogMove : MonoBehaviour
     private float currentIdleTime = 0f;
     public bool isIdle = true;
 
+
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -64,4 +65,5 @@ public class FrogMove : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
+    
 }

@@ -24,4 +24,13 @@ public class FrogAnimation : MonoBehaviour
             anim.SetBool("Jumping", false);
         }
     }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Player"))
+        {
+            anim.Play("FrogDeath");
+            Destroy(gameObject, 0.3f);
+        }
+    }
 }

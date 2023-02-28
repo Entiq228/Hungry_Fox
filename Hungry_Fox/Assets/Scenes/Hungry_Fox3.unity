@@ -213,7 +213,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -92187,6 +92187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &69244653 stripped
@@ -92446,6 +92450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &298264285 stripped
@@ -92623,6 +92631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &432441390 stripped
@@ -92684,6 +92696,10 @@ PrefabInstance:
     - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
       propertyPath: m_Name
       value: cherry-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
@@ -92747,6 +92763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &446846333 stripped
@@ -92808,6 +92828,10 @@ PrefabInstance:
     - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
       propertyPath: m_Name
       value: cherry-1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
@@ -92889,7 +92913,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -94971,6 +94995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &576868572 stripped
@@ -95137,7 +95165,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -96108,6 +96136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &667691265 stripped
@@ -96115,6 +96147,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 155402644689716309, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
   m_PrefabInstance: {fileID: 667691264}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &680822360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 39543564990667110, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -232.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050995, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050998, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39543566031050999, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1775911687}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 843b991519e80cd4f962bba14dd1a133, type: 3}
 --- !u!1 &699912870
 GameObject:
   m_ObjectHideFlags: 0
@@ -96695,6 +96832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &1099664912 stripped
@@ -96756,6 +96897,10 @@ PrefabInstance:
     - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
       propertyPath: m_Name
       value: cherry-1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
@@ -96953,7 +97098,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -98015,6 +98160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &1175392190 stripped
@@ -98076,6 +98225,10 @@ PrefabInstance:
     - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
       propertyPath: m_Name
       value: cherry-1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
@@ -98549,6 +98702,7 @@ GameObject:
   - component: {fileID: 1441223026}
   - component: {fileID: 1441223025}
   - component: {fileID: 1441223024}
+  - component: {fileID: 1441223031}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -98675,6 +98829,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   climbingSpeed: 5
+  KBForce: 0
+  KBTimer: 0
+  KBTotalTime: 0
+  knockFromRight: 0
 --- !u!70 &1441223028
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -98759,6 +98917,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1441223031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441223022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ecad190cd0c94ab9401d705001717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1449134985
 GameObject:
   m_ObjectHideFlags: 0
@@ -98982,6 +99152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &1485038074 stripped
@@ -99128,6 +99302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry-1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
 --- !u!4 &1550025256 stripped
@@ -99273,6 +99451,10 @@ PrefabInstance:
     - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
       propertyPath: m_Name
       value: cherry-1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
@@ -99830,6 +100012,10 @@ PrefabInstance:
     - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
       propertyPath: m_Name
       value: cherry-1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019810938391559137, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}
+      propertyPath: m_TagString
+      value: Cherry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 555b2b196bfbde94e902917e1ddf1a8f, type: 3}

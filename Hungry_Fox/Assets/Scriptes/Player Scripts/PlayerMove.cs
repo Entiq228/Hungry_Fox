@@ -36,6 +36,13 @@ public class PlayerMove : MonoBehaviour
     public LayerMask ladder;
     public float climbingSpeed;
 
+    //Відкидування
+    public float KBForce;
+    public float KBTimer;
+    public float KBTotalTime;
+
+    public bool knockFromRight;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -43,9 +50,24 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        isGround = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-        moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        if(KBTimer <= 0)
+        {
+            isGround = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+            moveInput = Input.GetAxis("Horizontal");
+            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        }
+        else
+        {
+            if(knockFromRight == true)
+            {
+                rb.velocity = new Vector2(-KBForce*2, KBForce);
+            }
+            else if(knockFromRight != true)
+            {
+                rb.velocity = new Vector2(KBForce*2, KBForce);
+            }
+            KBTimer -= Time.deltaTime;
+        }
 
         isLadder = Physics2D.OverlapCircle(ladderCheck.position, ladderCheckRadius, ladder);
 
@@ -115,7 +137,6 @@ public class PlayerMove : MonoBehaviour
             rb.velocity = Vector2.up * -climbingSpeed;
         }
         
-
     }
     //Розворот персонажа
     public void Flip()

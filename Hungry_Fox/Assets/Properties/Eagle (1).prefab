@@ -75,6 +75,8 @@ GameObject:
   - component: {fileID: 6698380437403270916}
   - component: {fileID: 6698380437403270919}
   - component: {fileID: 6698380437403270918}
+  - component: {fileID: 3211115644904291989}
+  - component: {fileID: 504846283303466692}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Untagged
@@ -203,6 +205,32 @@ MonoBehaviour:
   controlPoints: 0
   speed: 2
   horizontalMove: 1
+--- !u!114 &3211115644904291989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698380437403270912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee0eda230706ef4b9ad723e17189716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steal: 1
+  move: {fileID: 4194755243383909012, guid: 51d39e6f166848e4d9ded90087152976, type: 3}
+--- !u!114 &504846283303466692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698380437403270912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dad1ae9caea8df44a8fe7c5639e5044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6698380438509217741
 GameObject:
   m_ObjectHideFlags: 0
